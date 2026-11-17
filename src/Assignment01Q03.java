@@ -3,8 +3,8 @@ public class Assignment01Q03 {
         int x = Integer.parseInt(args[0]);
         System.out.println("The first " + x + " Fibonacci numbers are:");
 
-        int current = 1;
-        int next = 1;
+        long current = 1;
+        long next = 1;
 
         int numOdd = 0;
         for (int i = 0; i < x; i++) {
@@ -17,7 +17,7 @@ public class Assignment01Q03 {
             if (i < x - 1)
                 System.out.print(" "); // Make sure we don't print a trailing space
 
-            int temp = current + next;
+            long temp = current + next;
             current = next;
             next = temp;
         }
